@@ -4,20 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Barriecito|Vibes&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Get Giphy with it!</title>
   </head>
   <body>
       <div class="container">
-        <h1 class="jumbotron">Time for laughs</h1>
+        <div class="jumbotron mt-5">
+          <p class="display-3 mb-5 pb-3"><i class="far fa-grin-tears"></i> All the Gifs!</p>
         <div class="input-group mb-3" id="show-form">
-          <input id="show-input" type="text" class="form-control col-lg-6" placeholder="Add your favourite show here">
+          <input id="show-input" type="text" class="form-control col-sm-12 col-lg-6" placeholder="Add your favourite show">
           <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button" id="add-show">Add that show?</button>
+            <button class="btn" type="button" id="add-show">Add that show?</button>
           </div>
         </div>
         <div id="buttons-view"></div>
+        </div>
 
         <div id="shows-view" class="row"></div>
 
