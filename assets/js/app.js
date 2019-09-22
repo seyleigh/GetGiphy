@@ -61,26 +61,19 @@ $(document).ready(function(){
         $("#buttons-view").append(btns);
       }
     }
-    // Tried to make input form submit on pressing enter/return but i couldnt get it to work and I'm brain dead now.
-    // $('.input').keydown(function(e){
-    //   e.preventDefault()
-    //   var key = e.which;
-    //   if (key === 13) {
-    //     var add = $("#show-input").val().trim();
-    //     shows = [];
-    //     shows.push(add);
-    //     givenButtons();
-    //     $("#show-input").val('')
-    //   }
-    //   // if ($("#show-input").val() === ""){
-    //   //   return;
-    //   // } else { event.preventDefault();
-    //   //   var add = $("#show-input").val().trim();
-    //   //   shows = [];
-    //   //   shows.push(add);
-    //   //   givenButtons();
-    //   //   $("#show-input").val('');}
-    // });
+
+
+    document.getElementById('show-input').addEventListener('keypress', function(event) {
+      if (event.keyCode == 13) {
+          event.preventDefault();
+        var add = $("#show-input").val().trim();
+        shows = [];
+        shows.push(add);
+        givenButtons();
+        $("#show-input").val('')
+      }
+  });
+
 
     $("#add-show").on("click", function(event) {
       if ($("#show-input").val() === ""){
