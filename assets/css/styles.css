@@ -4,7 +4,6 @@ html {
 
 body {
     background: rgb(2, 0, 5);
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,116,1) 35%, rgba(0,212,255,1) 100%); */
     background-size: cover;
     color: white;
 }
@@ -15,7 +14,7 @@ body {
 }
 #add-show:hover, .btn:hover {
     /* background: gray; */
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,116,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(270deg, rgba(2,0,36,1) 0%, rgba(121,9,116,1) 35%, rgba(0,212,255,1) 100%);
     color: white;
 }
 p {
@@ -24,9 +23,6 @@ p {
 
 .jumbotron {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,116,1) 35%, rgba(0,212,255,1) 100%);
-    /* background: linear-gradient(270deg, rgba(172,172,172,1) 100%, rgba(255,255,255,0.8057598039215687) 100%); */
-     /* color: black; */
-   /* font-family: 'Vibes', cursive; */
 }
 
 .module-border-wrap {
@@ -35,7 +31,18 @@ p {
     position: relative;
     background: linear-gradient(to right,#72e3f2, #4884ff, #9a54f7, #eb50ff, #fb70a2);
     padding: 5px;
-};
+}
+
+p , .fa-grin-tears {
+        overflow: hidden;
+        transition-duration: 1.5s;
+        transition-property: transform;
+    }
+    p , .fa-grin-tears:hover {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+
 /* 
 font-family: 'Vibes', cursive;
 font-family: 'Barriecito', cursive; */

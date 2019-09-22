@@ -14,11 +14,11 @@ $(document).ready(function(){
           method: "GET"
         }).then(function(response) {
             var results = response.data;
+            console.log(results);
 
             for (var i = 0; i < results.length; i++) {
               var showDiv = $("<div class='col-sm-8 col-lg-5 m-3'>");
               var rate = $("<p>").text("Rating: " + results[i].rating);
-              // console.log(gifrate);
 
               var showImage = $("<img class='module-border-wrap'>");
 
@@ -53,7 +53,6 @@ $(document).ready(function(){
 
     };
     function givenButtons() {
-      // $("#buttons-view").empty();
       for (var i = 0; i < shows.length; i++) {
         var btns = $("<button class='btn m-1'>");
         btns.addClass("show-btn");
@@ -62,6 +61,7 @@ $(document).ready(function(){
         $("#buttons-view").append(btns);
       }
     }
+    
 
     $("#add-show").on("click", function(event) {
       if ($("#show-input").val() === ""){
@@ -78,5 +78,6 @@ $(document).ready(function(){
     givenButtons();
 
     $(document).on("click", ".show-btn", startShow);
+
 });
 
