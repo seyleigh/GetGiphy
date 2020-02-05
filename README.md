@@ -1,6 +1,6 @@
 # GetGiphy
 
-## Link to the site
+
 [Link to web site](https://seyleigh.github.io/GetGiphy/)
 - - -
 ## Description
